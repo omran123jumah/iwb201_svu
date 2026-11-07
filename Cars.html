@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ar" lang="ar" dir="rtl">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="جدول السيارات وأسعار التأجير ونموذج طلب الحجز." />
+  <title>المسار لتأجير السيارات - السيارات والحجز</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <p class="brand-en">AL MASAR CAR RENTAL</p>
+      <h1>السيارات المتاحة</h1>
+      <p class="tagline">يمكنك اختيار أكثر من سيارة ومشاهدة التفاصيل الإضافية.</p>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="home.html">الرئيسية</a></li>
+        <li><a href="Cars.html" class="current">السيارات والحجز</a></li>
+        <li><a href="AboutUs.html">من نحن</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <h2>قائمة السيارات</h2>
+      <p class="notice-line"></p>
+      <div class="table-scroll">
+        <table class="car-table">
+          <thead>
+            <tr>
+              <th scope="col">الرمز</th>
+              <th scope="col">الموديل</th>
+              <th scope="col">سنة الصنع</th>
+              <th scope="col">السعر اليومي</th>
+              <th scope="col">إظهار التفاصيل</th>
+              <th scope="col">اختيار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CR-001</td><td>Toyota Corolla</td><td>2023</td><td class="price">250,000 ل.س</td>
+              <td><label><input type="checkbox" class="details-toggle" value="details-001" /> تفاصيل</label></td>
+              <td><label><input type="checkbox" class="car-select" value="CR-001" /> اختيار</label></td>
+            </tr>
+            <tr class="car-details" id="details-001">
+              <td colspan="6"><strong>معلومات إضافية:</strong> بنزين، ناقل حركة أوتوماتيكي، 5 مقاعد، 32,000 كم، أبيض.</td>
+            </tr>
+            <tr>
+              <td>CR-002</td><td>Kia Sportage</td><td>2022</td><td class="price">400,000 ل.س</td>
+              <td><label><input type="checkbox" class="details-toggle" value="details-002" /> تفاصيل</label></td>
+              <td><label><input type="checkbox" class="car-select" value="CR-002" /> اختيار</label></td>
+            </tr>
+            <tr class="car-details" id="details-002">
+              <td colspan="6"><strong>معلومات إضافية:</strong> بنزين، ناقل حركة أوتوماتيكي، 5 مقاعد، 41,000 كم، فضي.</td>
+            </tr>
+            <tr>
+              <td>CR-003</td><td>Hyundai Elantra</td><td>2024</td><td class="price">300,000 ل.س</td>
+              <td><label><input type="checkbox" class="details-toggle" value="details-003" /> تفاصيل</label></td>
+              <td><label><input type="checkbox" class="car-select" value="CR-003" /> اختيار</label></td>
+            </tr>
+            <tr class="car-details" id="details-003">
+              <td colspan="6"><strong>معلومات إضافية:</strong> بنزين، ناقل حركة أوتوماتيكي، 5 مقاعد، 18,000 كم، أزرق داكن.</td>
+            </tr>
+            <tr>
+              <td>CR-004</td><td>Chevrolet Spark</td><td>2021</td><td class="price">180,000 ل.س</td>
+              <td><label><input type="checkbox" class="details-toggle" value="details-004" /> تفاصيل</label></td>
+              <td><label><input type="checkbox" class="car-select" value="CR-004" /> اختيار</label></td>
+            </tr>
+            <tr class="car-details" id="details-004">
+              <td colspan="6"><strong>معلومات إضافية:</strong> بنزين، ناقل حركة يدوي، 4 مقاعد، 55,000 كم، أحمر.</td>
+            </tr>
+            <tr>
+              <td>CR-005</td><td>Nissan Sunny</td><td>2023</td><td class="price">220,000 ل.س</td>
+              <td><label><input type="checkbox" class="details-toggle" value="details-005" /> تفاصيل</label></td>
+              <td><label><input type="checkbox" class="car-select" value="CR-005" /> اختيار</label></td>
+            </tr>
+            <tr class="car-details" id="details-005">
+              <td colspan="6"><strong>معلومات إضافية:</strong> بنزين، ناقل حركة أوتوماتيكي، 5 مقاعد، 27,000 كم، رمادي.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><button type="button" id="continue-button" class="button-link">متابعة</button></p>
+      <p id="selection-message" class="form-message"></p>
+      <div id="booking-panel" class="booking-panel">
+        <h2>نموذج طلب التأجير</h2>
+        <p>الحقول المعلمة بنجمة إلزامية استخدم الأرقام الإنجليزية في الرقم الوطني والتاريخ.</p>
+        <form id="booking-form" action="#" method="post">
+          <fieldset>
+            <legend>بيانات مقدم الطلب</legend>
+            <div class="form-row">
+              <label for="full-name">الاسم الكامل (اختياري)</label>
+              <input type="text" id="full-name" name="fullName" />
+              <span class="hint">إذا أُدخل الاسم، يجب أن يتكون من أحرف عربية ومسافات فقط.</span>
+            </div>
+            <div class="form-row">
+              <label for="national-id">الرقم الوطني (11 خانة) *</label>
+              <input type="text" id="national-id" name="nationalId" maxlength="11" />
+              <span class="hint">أول خانتين من 01 إلى 14.</span>
+            </div>
+            <div class="form-row">
+              <label for="start-date">تاريخ بداية التأجير (yyyy-mm-dd) *</label>
+              <input type="text" id="start-date" name="startDate" maxlength="10" />
+              <span class="hint">مثال: 2026-11-15</span>
+            </div>
+            <div class="form-row">
+              <label for="end-date">تاريخ نهاية التأجير (yyyy-mm-dd) *</label>
+              <input type="text" id="end-date" name="endDate" maxlength="10" />
+            </div>
+            <div class="form-row">
+              <label for="mobile">رقم الموبايل (Syriatel أو MTN، اختياري)</label>
+              <input type="text" id="mobile" name="mobile" maxlength="10" />
+              <span class="hint">مثال تجريبي للصيغة: 0931234567 أو 0941234567.</span>
+            </div>
+            <div class="form-row">
+              <label for="email">البريد الإلكتروني (اختياري)</label>
+              <input type="text" id="email" name="email" />
+            </div>
+            <p class="submit-row"><button type="submit" class="button-link">إرسال</button></p>
+          </fieldset>
+        </form>
+        <div id="result-box" class="result-box"></div>
+       
+      </div>
+    </div>
+    <div class="footer">
+      <p><a href="home.html">الرئيسية</a> | <a href="Cars.html">السيارات</a> | <a href="AboutUs.html">من نحن</a></p>
+    </div>
+  </div>
+</body>
+</html>

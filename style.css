@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f5f8;
+  color: #243244;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.page {
+  width: 92%;
+  max-width: 1050px;
+  margin: 24px auto;
+  background: #ffffff;
+  border: 1px solid #d8e0e8;
+}
+
+.header {
+  padding: 28px 34px;
+  background: #123b5d;
+  color: #ffffff;
+}
+
+.header h1 {
+  margin: 4px 0;
+  font-size: 30px;
+}
+
+.brand-en {
+  margin: 0;
+  color: #a9d9e9;
+  direction: ltr;
+  text-align: right;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.tagline {
+  margin: 4px 0 0 0;
+  color: #dceaf1;
+}
+
+.navigation {
+  background: #e6eef4;
+  border-bottom: 1px solid #d1dce5;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0 22px;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0 0 0 8px;
+}
+
+.navigation a {
+  display: block;
+  padding: 12px 16px;
+  color: #123b5d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover,
+.navigation a.current {
+  background: #d0e5ef;
+}
+
+.content {
+  padding: 24px 34px 36px 34px;
+}
+
+h2 {
+  margin-top: 22px;
+  color: #123b5d;
+}
+
+h3 {
+  margin-top: 0;
+  color: #17617c;
+}
+
+a {
+  color: #126b8d;
+}
+
+.button-link {
+  display: inline-block;
+  border: 0;
+  padding: 10px 20px;
+  background: #087fa0;
+  color: #ffffff;
+  text-decoration: none;
+  font: bold 16px Arial, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background: #075d79;
+}
+
+.notice,
+.group-card,
+.publication-card,
+.contact-card,
+.branch-card {
+  margin: 18px 0;
+  padding: 16px 20px;
+  border: 1px solid #d8e4eb;
+  background: #f8fbfc;
+}
+
+.notice {
+  border-right: 4px solid #e2a93b;
+}
+
+.group-card {
+  border-right: 4px solid #1684a0;
+}
+
+.publication-card {
+  border-right: 4px solid #7b9d5b;
+}
+
+.edit-instruction,
+.notice-line,
+.hint,
+.privacy-note {
+  color: #526577;
+  font-size: 14px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.car-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+}
+
+.car-table th {
+  padding: 11px 8px;
+  background: #123b5d;
+  color: #ffffff;
+}
+
+.car-table td {
+  padding: 10px 8px;
+  border: 1px solid #d5dfe7;
+  text-align: center;
+}
+
+.car-table tbody tr:nth-child(even) {
+  background: #f4f8fa;
+}
+
+.car-table .car-details {
+  display: none;
+  background: #eaf5f8;
+  text-align: right;
+}
+
+.car-table .car-details td {
+  text-align: right;
+}
+
+.car-table input {
+  width: auto;
+}
+
+.price {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.booking-panel {
+  display: none;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #bfd5df;
+  background: #f8fbfc;
+}
+
+fieldset {
+  margin: 0;
+  padding: 18px;
+  border: 1px solid #bdccd6;
+}
+
+legend {
+  padding: 0 8px;
+  color: #123b5d;
+  font-weight: bold;
+}
+
+.form-row {
+  margin: 14px 0;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-row input {
+  display: block;
+  width: 96%;
+  max-width: 540px;
+  padding: 10px;
+  border: 1px solid #aebdc8;
+  background: #ffffff;
+  color: #243244;
+  font: 16px Arial, Tahoma, sans-serif;
+}
+
+.form-row input:focus {
+  border-color: #087fa0;
+  outline: 2px solid #c7e9f2;
+}
+
+.hint {
+  display: block;
+  margin-top: 3px;
+}
+
+.submit-row {
+  margin-bottom: 0;
+}
+
+.form-message {
+  display: none;
+  padding: 10px 14px;
+  color: #7a4b00;
+  background: #fff4d7;
+  border: 1px solid #ecd28b;
+}
+
+.result-box {
+  display: none;
+  margin-top: 20px;
+  padding: 18px;
+  border: 1px solid #a5ceb0;
+  background: #eff9f1;
+}
+
+.result-box h3 {
+  color: #24613a;
+}
+
+.result-box ul {
+  padding-right: 24px;
+}
+
+.total-line {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 14px 28px;
+  background: #e6eef4;
+  color: #526577;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 2px;
+}
+
+@media screen and (max-width: 650px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    border: 0;
+  }
+  .header,
+  .content {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+  .navigation ul {
+    padding: 0 8px;
+  }
+  .navigation li {
+    margin-left: 0;
+  }
+  .navigation a {
+    padding: 10px 9px;
+    font-size: 14px;
+  }
+  .car-table {
+    min-width: 690px;
+  }
+}
